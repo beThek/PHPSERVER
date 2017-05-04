@@ -1,0 +1,52 @@
+.body {
+    display:block;
+    margin:0 auto;
+    width:576px;
+    background: rgba(0,0,0,0.4);
+}
+
+/* Centre the form within the page */
+form {
+    margin:100 auto;
+    width:479px;
+}
+
+/* Style the text boxes */
+input, textarea{
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border:1px solid #dedede;
+	padding:10px;
+	margin-top:3px;
+	font-size:0.9em;
+	color:#3a3a3a;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+
+
+input:focus, {
+    border:1px solid #97d6eb;
+}
+
+#submit {
+    width:127px;
+    height:38px;
+    
+    border:solid;
+    margin-top:40px;
+    cursor:pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+	#submit:hover {
+	    opacity:.9;
+	}
+
+
+
+
