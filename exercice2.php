@@ -17,29 +17,15 @@
 	<input id="submit" name="submit" type="submit" value="Envoyer">
 
 <p></p>
-
-<!-----------------------------2eme partie de l'exercice-->
-
-<p>Etes-vous un homme ou une femme</p>
-
-	<label for="homme">Homme</label>
-	<input type="radio" name="choix" id="homme" value="homme">
-
-	<label for="femme">Femme</label>
-	<input type="radio" name="choix" id="femme" value="femme">
-	<br>
-
-
 <?php
 
 
 
 if (isset($_GET['howmuch'])){
 $howmuch = $_GET['howmuch'];
-}
-else{
-
-$howmuch = 0; 
+}else{
+$_GET['howmuch'] = "";
+$howmuch = '';
 }
 
 $age= $_GET['howmuch'];
@@ -51,24 +37,9 @@ elseif ($age > 10 && $age <= 99) {
 $age="salut grand";
 }
 
-
-if (isset($_GET['genre'])){
-$genre = $_GET['genre'];
-}else{
-$_GET['genre'] = "";
-$genre = '';
-}
-
-
 echo $howmuch;
 echo "</br>";
-echo $genre;
 echo $age;
-
-
-/*------------------------------ 2eme partie de l'exercice*/ 
-
-
 
 
 ?>
